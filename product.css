@@ -1,0 +1,318 @@
+@font-face{
+    font-family: "Aelyn"; 
+    src: url('./fonts/Aelyn/PS-Aelyn-Regular.otf') format('opentype');
+}
+
+@media (min-width: 850px){
+
+    body{
+        /* background-color: rgb(235, 235, 235); */
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    /* OVERLAY */
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        z-index: 99;
+    }
+    .first {
+        background: #F5F2DF;
+    }
+
+    #bm-rose-couleur-2{
+        /* !!! EXCELLENT MOYEN DE CENTRER UN ELEMENT AU MILIEU DE LA PAGE */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+    }
+
+    /* ============================================== */
+    #bm-logo{
+        width: 200px;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .logo{
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        font-size: 0.3em;
+        letter-spacing: 10px;
+        text-align: center;
+        color: black;
+    }
+
+
+    #bm-logo-menu{
+        width: 200px;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .logo-menu{
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        font-size: 0.3em;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+
+
+    /* WEBGL =========================================== */
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -50px;
+        margin-bottom: 0px;
+        display: flex;
+    }
+
+    article {
+        margin-top: 150px;
+        margin-left: 150px;
+        max-width: 400px;
+        max-height: 600px;
+    }
+
+    .p-product {
+        max-width: 600px;
+        margin-top: 150px;
+        line-height: 2;
+    }
+
+    article img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    /* ====================================================== */
+    .p-product h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        font-size: 2.7em;
+    }
+    .p-product p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    .vertical { 
+        border-left: 1px solid black; 
+        height: 600px; 
+        display: inline-block;
+        margin-top: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
+        } 
+    /* ================================================ */
+
+    /* BOUTON ====================================================== */
+
+    .activate {
+        /* margin-left: 150px; */
+        display: table;
+        background: #5628EE;
+        box-shadow: 0 4px 20px rgba(86, 40, 238, 0.15);
+        line-height: 20px;
+        padding: 12px;
+        border-radius: 22px;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+      }
+      .activate .span-button {
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 4px 0 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .activate .span-button:before {
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #5628EE;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+      .activate .span-button svg {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 50%;
+        top: 50%;
+        margin: -6px 0 0 -6px;
+        z-index: 1;
+      }
+      .activate .span-button svg:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 0;
+        fill: none;
+        margin: 0;
+        stroke: #fff;
+        stroke-width: 1px;
+        stroke-dashoffset: 94.248;
+        stroke-dasharray: 47.124;
+      }
+      .activate .span-button svg:nth-child(2) {
+        fill: #5628EE;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .activate .span-button svg:nth-child(3) {
+        fill: #5628EE;
+        transform: translateY(20px);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+      }
+      .activate:hover {
+        box-shadow: 0 8px 24px rgba(86, 40, 238, 0.15);
+      }
+      .activate:hover .span-button svg:nth-child(2) {
+        transform: translateY(-20px);
+      }
+      .activate:hover .span-button svg:nth-child(3) {
+        transform: translateY(0);
+      }
+      .activate:active {
+        transform: scale(0.94);
+        box-shadow: 0 4px 16px rgba(63, 220, 117, 0.18);
+      }
+      .activate.loading .span-button {
+        background: none;
+        transition: background 0.1s ease 0.3s;
+      }
+      .activate.loading .span-button:before {
+        transform: scale(1);
+      }
+      .activate.loading .span-button svg:nth-child(1) {
+        -webkit-animation: turn 1.6s linear infinite forwards, path 1.6s linear infinite forwards;
+                animation: turn 1.6s linear infinite forwards, path 1.6s linear infinite forwards;
+      }
+      .activate.loading .span-button svg:nth-child(2) {
+        transform: translateY(-20px);
+      }
+      .activate.loading .span-button svg:nth-child(3) {
+        opacity: 0;
+        transform: translateY(0) scale(0.6);
+      }
+      .activate.loading .ul {
+        transform: rotateX(90deg);
+      }
+      .activate.loading.done {
+        background: #3FDC75;
+        box-shadow: 0 4px 20px rgba(63, 220, 117, 0.15);
+      }
+      .activate.loading.done .span-button {
+        background: #fff;
+        transition: background 0.1s ease 0s;
+      }
+      .activate.loading.done .span-button:before {
+        background: #3FDC75;
+        transform: scale(0);
+      }
+      .activate.loading.done .span-button svg:nth-child(1) {
+        -webkit-animation: none;
+                animation: none;
+      }
+      .activate.loading.done .span-button svg:nth-child(3) {
+        fill: #3FDC75;
+        opacity: 1;
+        transform: scale(1);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.4s ease 0.25s;
+      }
+      .activate.loading.done .ul {
+        transform: rotateX(180deg);
+      }
+      .activate .ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        height: 20px;
+        width: 160px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.3s ease;
+      }
+      .activate .ul .li {
+        --rotateX: 0deg;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        transform-origin: 50% 50%;
+        transform: rotateX(var(--rotateX)) translateZ(10px);
+      }
+      .activate .ul .li:nth-child(2) {
+        --rotateX: -90deg;
+      }
+      .activate .ul .li:nth-child(3) {
+        --rotateX: -180deg;
+      }
+      
+      @-webkit-keyframes turn {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes turn {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes path {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes path {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+    /* =============================== */
+    footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 50px;
+    }
+    .name{
+        margin-left: 50px;
+        margin-top: 310px;
+    }
+    .copyright{
+        margin-right: 50px;
+        margin-top: 200px;
+    }
+    
+      
+    /* ============================================================= */
+
+}

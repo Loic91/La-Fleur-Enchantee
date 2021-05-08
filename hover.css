@@ -1,0 +1,54 @@
+.menu__item-text {
+  display: inline-flex;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 1;
+}
+.menu__item-text:hover {
+  position: relative;
+  z-index: 3;
+}
+.menu__item-image {
+  height: 350px;
+  width: 350px;
+  background-size: cover;
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
+  transform: scale(0.4);
+}
+.img1{
+    margin-left: 250px;
+    margin-top: -300px;
+}
+.img2{
+    margin-left: 650px;
+    margin-top: -300px;
+}
+.img3{
+    margin-left: 350px;
+    margin-top: -300px;
+}
+.img4{
+    margin-left: 850px;
+    margin-top: -300px;
+}
+
+
+
+
+.menu__item-image.img1, .menu__item-image.resting {
+  background-image: url("img/earl.jpg");
+}
+.menu__item-image.img2 {
+  background-image: url("img/tanalee.jpg");
+}
+.menu__item-image.img3 {
+  background-image: url('img/marcella-.jpg');
+}
+.menu__item-image.img4 {
+  background-image: url('img/earl-2.jpg');
+}
+/* .menu__item-image.enquiring {
+  background-image: url('https://images.unsplash.com/photo-1540759772348-12e90305e8f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+} */

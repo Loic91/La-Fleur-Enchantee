@@ -1,0 +1,340 @@
+@media screen and (min-width: 200px) and (max-width: 855px){
+
+    body{
+        /* background-color: rgb(235, 235, 235); */
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    /* OVERLAY */
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        z-index: 99;
+    }
+    .first {
+        background: #F5F2DF;
+    }
+    #bm-rose-couleur{
+        /* !!! EXCELLENT MOYEN DE CENTRER UN ELEMENT AU MILIEU DE LA PAGE */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+    }
+    /* ============================================== */
+    /* !!!!! MENU =============== */
+    .nav__link {
+        font-size: 3em;
+    }
+    .menu-flex{
+        display: block;
+        justify-content: space-between;
+    }
+    /* .data {
+        padding-top: -20px;
+    } */
+    .contact-menu{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 50px;
+        padding-left: 60px;
+        text-align: left;
+        font-size: 0.7em;
+    }
+    .margin{
+        margin-top: -20px;
+    }
+    /* ============================================== */
+
+    #bm-logo{
+        width: 200px;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .logo{
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        font-size: 0.3em;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+
+
+
+    /* BANNIERE ==================================== */
+    .banniere-svg{
+        margin-bottom: 200px;
+    }
+
+    #bm-flowers-1{
+        /* margin-left: -100px; */
+        margin-top: -450px;
+        z-index: 5;
+    }
+    #bm-flowers-2{
+        margin-left: 0px;
+        margin-top: 0;
+        z-index: 5;
+    }
+
+    .item-1 {
+        line-height: 1;
+        color: rgb(0, 0, 0);
+        margin-top: 0px;
+        
+        grid-column: col 2/span 7;
+        grid-row: row 2/span 4;
+        z-index: 2;
+    }
+
+    .item-1 h1 {
+        font-size: 2em;
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        text-align: center;
+        text-transform: uppercase;
+        overflow: hidden;
+        display: block;
+        line-height: 1.1;
+        padding-top: 20px;
+    }
+    .item-1 h1 span {
+        visibility: hidden;
+    }
+    .item-1 p {
+        font-size: 0.9em;
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        text-align: center;
+        letter-spacing: 15px;
+        /* text-transform: uppercase; */
+        overflow: hidden;
+        display: block;
+        line-height: 1.1;
+        padding-top: -50px;
+    }
+    .item-1 p span {
+        visibility: hidden;
+    }
+    
+
+    /* BLOC BOTTOM 1 ============================================================= */
+    #bm-flowers-3{
+        /* margin-left: -100px;
+        margin-top: -1300px;
+        z-index: 5; */
+        display: none;
+    }
+    #bm-flowers-4{
+        /* margin-left: -100px;
+        margin-top: 500;
+        z-index: 5; */
+        display: none;
+    }
+    .title2 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        font-size: 40em;
+        text-align: center;
+        color: rgba(199, 196, 196, 0.363);
+        margin-top: -400px;
+        margin-left: -150px;
+        margin-bottom: -200px;
+    }
+    .text-bloc1 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        color: rgb(0, 0, 0);
+        font-size: 1.5em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .t1{
+        margin-top: 300px;
+        text-align: center;
+    }
+    .t2{
+        margin-top: -20px;
+        text-align: center;
+    }
+    .t3{
+        text-align: center;
+        margin-top: -20px;
+    }
+    .t4{
+        text-align: center;
+        margin-top: -20px;
+    }
+    /* ========================== */
+
+    .text-special-01 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 3em;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .text-special-02 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 3em;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .text-special-03 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 3em;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .h1.splitting {
+        color: #000000;
+    }
+    .h1 .char {
+        transition: transform 0.3s cubic-bezier(.3, 0, .7, 1);
+        transition-delay: calc(20ms * var(--char-index));
+    }
+
+    .h1[data-scroll="out"] .char {
+        opacity: 0;
+        transform: translateY(.85em); 
+    }
+    .h1{
+    overflow: hidden;
+    color: transparent;
+    }
+
+    .bloc-images-01{
+        display: flex;
+        justify-content: space-around;
+        margin-top: -50px;
+    }
+    .bloc-images-02{
+        display: flex;
+        justify-content: space-around;
+        margin-top: -50px;
+    }
+    .bloc-images-03{
+        display: flex;
+        justify-content: space-around;
+        margin-top: -50px;
+    }
+    .images-1 img{
+        width: 300px;
+        margin: 25px;
+        margin-top: 100px;
+    }
+    .images-2 img{
+        width: 300px;
+        margin: 25px;
+        margin-top: 100px;
+    }
+    .images-3 img{
+        width: 300px;
+        margin: 25px;
+        margin-top: 100px;
+    }
+    .images-4 img{
+        width: 300px;
+        margin: 25px;
+        margin-top: 100px;
+    }
+    /* ========================= */
+    .text-redirection h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        /* font-style: italic; */
+        font-size: 2em;
+        margin-top: 150px;
+        text-align: left;
+        margin-left: 170px;
+    }
+    .container-button{
+        position: absolute;
+        transform: translateY('-50%');
+        width: 350px;
+        text-align: center;
+        margin-top: -150px;
+        margin-left: 60px;
+    }
+    .button{
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        border: 1px solid rgb(223, 120, 120);
+        overflow: hidden;
+    }
+    .arrow i{
+        color: rgb(223, 120, 120);
+        text-align: center;
+        margin-top: 35%;
+        font-size: 4em;
+    }
+    /* ========================= */
+
+    .title3 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        font-size: 40em;
+        text-align: center;
+        color: rgba(199, 196, 196, 0.363);
+        margin-top: -400px;
+        margin-left: -250px;
+        margin-bottom: -200px;
+    }
+    .text-bloc2 h1{
+        font-family: "Aelyn"; 
+        font-weight: lighter;
+        color: rgb(0, 0, 0);
+        font-size: 1.5em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .t5{
+        margin-top: 250px;
+        text-align: center;
+    }
+    .t6{
+        margin-top: -20px;
+        text-align: center;
+    }
+    .t7{
+        text-align: center;
+        margin-top: -30px;
+    }
+    .t8{
+        text-align: center;
+        margin-top: -30px;
+    }
+    /* =============================== */
+    footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 50px;
+    }
+    .name{
+        margin-left: 5px;
+        margin-top: 310px;
+        font-size: 0.7em;
+    }
+    .copyright{
+        margin-right: 5px;
+        margin-top: 240px;
+        font-size: 0.7em;
+    }
+
+
+}
