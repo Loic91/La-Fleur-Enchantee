@@ -26,15 +26,15 @@
     .first {
         background: #F5F2DF;
     }
-    #bm-rose{
+    #bm-rose-couleur-2{
         /* !!! EXCELLENT MOYEN DE CENTRER UN ELEMENT AU MILIEU DE LA PAGE */
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     /* ============================================== */
     /* MENU =============== */

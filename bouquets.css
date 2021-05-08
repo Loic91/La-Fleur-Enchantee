@@ -3,7 +3,7 @@
     src: url('./fonts/Aelyn/PS-Aelyn-Regular.otf') format('opentype');
 }
 
-@media (min-width: 800px){
+@media (min-width: 1049px){
 
     html, body {
         /* background-color: rgb(235, 235, 235); */
